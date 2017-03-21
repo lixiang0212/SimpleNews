@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lx.newsdemo.LookActivity">
+    <TextView
+        android:text="新闻信息"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:background="#2e519e"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/look_progressBar"
+        android:max="100"
+        android:progress="0"
+        />
+    <WebView
+        android:id="@+id/look_webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
